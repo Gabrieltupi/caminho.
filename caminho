@@ -1,0 +1,45 @@
+package Caminho;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+/**
+ *
+ * @author Super Maquina
+ */
+public class Caminho {
+    public static String positivo(){
+        int x=0;
+        
+        
+        String aha[]={"O","+","+","+","+","+","X","X","X","X","X\n"+
+                     " X","X","X","X","X","+","+","+","X","X","X\n"+
+                     " X","X","X","X","X","X","X","+","+","+","D"};
+        System.out.println("[O+++++XXXXX\n "
+                          + "XXXXX+++XXX\n "
+                          + "XXXXXXX+++D]");
+       
+        
+        for (int i=0;i<aha.length;i++){
+           if (aha[i]=="+"){
+                x=x+1;
+           }
+        }
+            
+        
+    String resp= "o caminho:\n"
+               + "[O+++++XXXXX\n "
+               + "XXXXX+++XXX\n "
+               + "XXXXXXX+++D]"+"tem exatamente "+x
+               +" sinais de caminho para chegar ate o D";    
+    return resp;
+    }
+    
+    public static void main(String[] args) {
+        System.out.println(positivo());
+
+
+    }
+    
+}
